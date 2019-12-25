@@ -3,7 +3,7 @@ MAINTAINER "@cgpu"
 
 RUN apt update \
   && apt install -y --no-install-recommends \
-    ## yufree {units} dependency
+    ## {r-quantities/units} dependency
     libudunits2-dev \
     apt-utils \
     libnetcdf-dev \
