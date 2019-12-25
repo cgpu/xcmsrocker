@@ -4,8 +4,9 @@ MAINTAINER "@cgpu"
 RUN apt update \
   && apt install -y --no-install-recommends \
     ## {r-quantities/units} dependency
-    libudunits2-dev \
     apt-utils \
+  && apt install -y --no-install-recommends \
+    libudunits2-dev \
     libnetcdf-dev \
     ## rgl support
     libgl1-mesa-dev \
