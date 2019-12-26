@@ -6,6 +6,10 @@ RUN apt update \
     ## {r-quantities/units} dependency
     apt-utils \
   && apt install -y --no-install-recommends \
+    libgdal-dev \
+    ## {r-spatial/sf} dependency
+    libgeos-dev \
+    libproj-dev \
     libudunits2-dev \
     libnetcdf-dev \
     ## rgl support
@@ -50,7 +54,6 @@ RUN apt update \
     rwehrens/BatchCorrMetabolomics \
     yufree/decoMS2 \
     KechrisLab/MSPrep \
-    IsoMS/MetMatch \
     yufree/xsetplus \
     yufree/MetDIA \
     WMBEdmands/MetMSLine \
